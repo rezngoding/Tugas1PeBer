@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#51829B"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:text="Cashier"
+        android:textColor="@color/white"
+        android:textSize="35dp" />
+
+    <!-- Nama Pembeli -->
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp"
+        android:background="#CDDC39"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="Nama Pembeli"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/Nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Nama" />
+
+    <!-- Daftar Album -->
+    <TextView
+        android:text="Daftar Sepatu"
+        android:layout_width="122dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="#CDDC39"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:textSize="14dp" />
+
+    <!-- Gambar Album -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <!-- Album 1 -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/g6" />
+
+        <!-- Album 2 -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/g5" />
+
+        <!-- Album 3 -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/g8" />
+
+    </LinearLayout>
+
+
+    <!-- Nama dan Harga Album -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp">
+
+        <!-- Album 1 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Infinity Sport "
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Rp 250.000 "
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/Nol1"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:hint="0"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Urban Chic Sneakers"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Rp 250.000 "
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/Nol2"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:hint="0"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Casual Sporty"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Rp 250.000 "
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/Nol3"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:hint="0"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <!-- Membership Section -->
+    <TextView
+        android:text="Membership"
+        android:layout_width="118dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:background="#CDDC39"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:textSize="14dp" />
+
+    <!-- Radio Group untuk Membership -->
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:id="@+id/rbGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Gold"/>
+
+        <RadioButton
+            android:id="@+id/rbSilver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Silver" />
+
+        <RadioButton
+            android:id="@+id/rbReguler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Reguler" />
+    </RadioGroup>
+
+    <!-- Button Bayar -->
+    <Button
+        android:id="@+id/Bayar"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:background="#CDDC39"
+        android:gravity="center"
+        android:text="BAYAR"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20dp" />
+
+</LinearLayout>
